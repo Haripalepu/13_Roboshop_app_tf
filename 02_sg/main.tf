@@ -482,7 +482,7 @@ resource "aws_security_group_rule" "payment_alb" {
   from_port                = 8080
   to_port                  = 8080
   protocol                 = "tcp"
-  security_group_id        = module.cart.sg_id
+  security_group_id        = module.payment.sg_id
 }
 
 resource "aws_security_group_rule" "web_vpn" {
