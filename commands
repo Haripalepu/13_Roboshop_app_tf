@@ -7,3 +7,10 @@ Commands to run this repo
 5. terraform destroy -auto-approve
 
 then go to 02_sg and run same commands 
+
+
+To destroy all the resources from 14_payment folder to 01_vpc
+for i in `ls -dr */` ; do cd $i ; terraform destroy -auto-approve ; cd .. ; done
+
+ls -dr */  - this command will list the directories in reverse order.
+
